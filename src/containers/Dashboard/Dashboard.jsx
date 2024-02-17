@@ -5,6 +5,8 @@ import styles from "./Dashboard.module.css";
 import calendar from "../../assets/Icon/calendar.svg";
 import arrowdown from "../../assets/Icon/arrowdown.svg";
 import setting from "../../assets/Icon/setting.svg";
+import Group239444 from "../../assets/Icon/Group 239444.png"
+import Progresswheel from "../../assets/Icon/Progresswheel.png"
 import chart2 from "../../assets/Icon/chart2.svg";
 import chartsuccess from "../../assets/Icon/chartsuccess.svg";
 import donoughtChart from "../../assets/Icon/donought-chart.svg";
@@ -24,185 +26,817 @@ import menu from "../../assets/Icon/Menu.svg";
 const Dashboard = () => {
   return (
     <>
-      <div className={styles.dashboard}>
-        <Navbar />
-        {/* <Sidebar /> */}
-        <div className={styles.dashboardParent}>
-          <div className={styles.dashboard2}>Dashboard</div>
-          <div className={styles.calendarParent}>
-            <div className={styles.calendar}>
-              <img className={styles.icon} alt="" src={calendar} />
-              <div className={styles.date}>Oct 16 - Oct 23</div>
-              <img
-                className={styles.vuesaxboldelement3Icon}
-                alt=""
-                src={arrowdown}
-              />
-            </div>
-            <div className={styles.calendar1}>
-              <img className={styles.icon} alt="" src={setting} />
-            </div>
-          </div>
-        </div>
-        <div className={styles.overview}>
-          <div className={styles.taskInProgress}>
-            <div className={styles.chart2Parent}>
-              <img className={styles.chart2Icon} alt="" src={chart2} />
-              <div className={styles.date}>Task in Progress</div>
-            </div>
-            <img className={styles.taskInProgressChild} alt="" src={vectro6} />
-            <div className={styles.parent}>
-              <div className={styles.div}>210</div>
-              <div className={styles.vuesaxoutlinetrendUpParent}>
-                <img
-                  className={styles.vuesaxboldelement3Icon}
-                  alt=""
-                  src={trendup}
-                />
-                <div className={styles.workspace}>+11%</div>
-                <div className={styles.lastWeek}>last week</div>
+   <main
+        class="self-stretch mt-[5rem] flex flex-row items-start justify-start py-[0rem] px-[2rem] box-border max-w-full shrink-0"
+      > 
+        <section
+          class="flex-1 flex flex-col items-start justify-start gap-[0.75rem] max-w-full text-center text-[1.13rem] text-darkslateblue-300 font-lato"
+        > 
+          <div
+            class="self-stretch flex flex-row items-start justify-center gap-[0.63rem] lg:flex-wrap"
+          >
+            <div
+              class="flex-1 rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] flex flex-col items-center justify-start py-[1.25rem] pr-[0.75rem] pl-[0.88rem] box-border gap-[4.56rem] min-w-[13.56rem] max-w-[13.81rem] min-h-[15.31rem] lg:min-h-[auto]"
+            >
+              <div
+                class="w-[13.81rem] h-[15.31rem] relative rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] hidden"
+              ></div>
+              <h3
+                class="m-0 self-stretch h-[1.75rem] relative text-inherit font-bold font-inherit flex items-center justify-center shrink-0 z-[1]"
+              >
+                Stat title here
+              </h3>
+              <div
+                class="w-[6.31rem] h-[1.75rem] relative text-[2.25rem] font-semibold font-poppins flex items-center justify-center shrink-0 z-[1] mq450:text-[1.38rem] mq1050:text-[1.81rem]"
+              >
+                68%
               </div>
             </div>
-          </div>
-          <div className={styles.taskInProgress}>
-            <div className={styles.chart2Parent}>
-              <img className={styles.chart2Icon} alt="" src={graph} />
-              <div className={styles.date}>Task Completed</div>
-            </div>
-            <img className={styles.taskInProgressChild} alt="" src={vector8} />
-            <div className={styles.parent}>
-              <div className={styles.div}>185</div>
-              <div className={styles.vuesaxoutlinetrendUpGroup}>
-                <img
-                  className={styles.vuesaxboldelement3Icon}
-                  alt=""
-                  src={trenddown}
-                />
-                <div className={styles.workspace}>+15%</div>
-                <div className={styles.lastWeek}>last week</div>
+            <div
+              class="flex-1 rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] flex flex-col items-center justify-start py-[1.25rem] pr-[0.75rem] pl-[0.88rem] box-border gap-[4.56rem] min-w-[13.56rem] max-w-[13.81rem] min-h-[15.31rem] lg:min-h-[auto]"
+            >
+              <div
+                class="w-[13.81rem] h-[15.31rem] relative rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] hidden"
+              ></div>
+              <h3
+                class="m-0 self-stretch h-[1.75rem] relative text-inherit font-bold font-inherit flex items-center justify-center shrink-0 z-[1]"
+              >
+                Stat title here
+              </h3>
+              <div
+                class="w-[6.31rem] h-[1.75rem] relative text-[2.25rem] font-semibold font-poppins flex items-center justify-center shrink-0 z-[1] mq450:text-[1.38rem] mq1050:text-[1.81rem]"
+              >
+                68%
               </div>
             </div>
-          </div>
-          <div className={styles.monthlyTask}>
-            <div className={styles.chart2Parent}>
-              <img className={styles.chart2Icon} alt="" src={chartsuccess} />
-              <div className={styles.date}>Monthly Tasks Summary</div>
-            </div>
-            <div className={styles.lineParent}>
-              <div className={styles.lineDiv} />
-              <div className={styles.frameChild2} />
-              <div className={styles.groupContainer}>
-                <div className={styles.rectangleGroup}>
-                  <div className={styles.groupChild} />
-                  <div className={styles.div4}>15%</div>
-                </div>
-                <div className={styles.rectangleContainer}>
-                  <div className={styles.groupItem} />
-                  <div className={styles.div5}>21%</div>
-                </div>
-                <div className={styles.groupDiv}>
-                  <div className={styles.groupInner} />
-                  <div className={styles.div6}>32%</div>
+            <div
+              class="flex-1 rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] flex flex-col items-center justify-start pt-[1.25rem] pb-[1.75rem] pr-[0.75rem] pl-[0.88rem] box-border min-w-[13.56rem] max-w-[13.81rem]"
+            >
+              <div
+                class="w-[13.81rem] h-[15.31rem] relative rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] hidden z-[1]"
+              ></div>
+              <div
+                class="self-stretch flex flex-col items-center justify-start gap-[0.75rem]"
+              >
+                <h3
+                  class="m-0 self-stretch h-[1.75rem] relative text-inherit font-bold font-inherit flex items-center justify-center shrink-0 z-[1]"
+                >
+                  Stat title here
+                </h3>
+                <div
+                  class="self-stretch flex flex-row items-center justify-center py-[0rem] px-[1.19rem]"
+                >
+                  <div class="h-[9.81rem] flex-1 relative">
+                    <div
+                      class="absolute top-[0rem] left-[0rem] rounded-[50%] bg-whitesmoke-100 w-full h-full z-[1]"
+                    ></div>
+                    <div
+                      class="absolute top-[0rem] left-[0rem] rounded-[50%] bg-royalblue w-full h-full z-[2]"
+                    ></div>
+                  </div>
                 </div>
               </div>
-              <div className={styles.mParent}>
-                <div className={styles.date}>$2m</div>
-                <div className={styles.date}>$1m</div>
-                <div className={styles.date}>$0m</div>
+              <div
+                class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[1.44rem] pl-[1.69rem] mt-[-1.19rem] text-[1rem] text-darkslateblue-200"
+              >
+                <div
+                  class="flex-1 flex flex-row items-start justify-between gap-[1.25rem]"
+                >
+                  <b
+                    class="w-[1.75rem] relative flex items-center justify-center shrink-0 z-[4]"
+                    >00</b
+                  >
+                  <div
+                    class="w-[3rem] flex flex-row items-start justify-start relative"
+                  >
+                    <b class="flex-1 relative z-[4]">100</b>
+                    <div
+                      class="h-[8.75rem] w-[8.75rem] my-0 mx-[!important] absolute top-[-8.06rem] left-[-6.06rem] flex flex-col items-center justify-start text-[2rem] text-darkslateblue-300"
+                    >
+                      <div
+                        class="self-stretch h-[8.75rem] relative rounded-[50%] bg-white z-[3]"
+                      ></div>
+                      <div
+                        class="w-[6.31rem] h-[1.75rem] relative flex items-center justify-center shrink-0 z-[4] mt-[-5.5rem] mq450:text-[1.19rem] mq1050:text-[1.63rem]"
+                      >
+                        68%
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className={styles.parent}>
-              <div className={styles.div}>1.240</div>
-              <div className={styles.vuesaxoutlinetrendUpParent}>
-                <img
-                  className={styles.vuesaxboldelement3Icon}
-                  alt=""
-                  src={trendup}
-                />
-                <div className={styles.workspace}>+11%</div>
-                <div className={styles.lastWeek}>last week</div>
+            <div
+              class="flex-1 rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] flex flex-col items-center justify-start pt-[1.25rem] pb-[1.75rem] pr-[0.75rem] pl-[0.88rem] box-border min-w-[13.56rem] max-w-[13.81rem]"
+            >
+              <div
+                class="w-[13.81rem] h-[15.31rem] relative rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] hidden z-[1]"
+              ></div>
+              <div
+                class="self-stretch flex flex-col items-center justify-start gap-[0.75rem]"
+              >
+                <h3
+                  class="m-0 self-stretch h-[1.75rem] relative text-inherit font-bold font-inherit flex items-center justify-center shrink-0 z-[1]"
+                >
+                  Stat title here
+                </h3>
+                <div
+                  class="self-stretch flex flex-row items-center justify-center py-[0rem] px-[1.19rem]"
+                >
+                  <div class="h-[9.81rem] flex-1 relative">
+                    <div
+                      class="absolute top-[0rem] left-[0rem] rounded-[50%] bg-whitesmoke-100 w-full h-full z-[1]"
+                    ></div>
+                    <div
+                      class="absolute top-[0rem] left-[0rem] rounded-[50%] bg-royalblue w-full h-full z-[2]"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[1.44rem] pl-[1.69rem] mt-[-1.19rem] text-[1rem] text-darkslateblue-200"
+              >
+                <div
+                  class="flex-1 flex flex-row items-start justify-between gap-[1.25rem]"
+                >
+                  <b
+                    class="w-[1.75rem] relative flex items-center justify-center shrink-0 z-[4]"
+                    >00</b
+                  >
+                  <div
+                    class="w-[3rem] flex flex-row items-start justify-start relative"
+                  >
+                    <b class="flex-1 relative z-[4]">100</b>
+                    <div
+                      class="h-[8.75rem] w-[8.75rem] my-0 mx-[!important] absolute top-[-8.06rem] left-[-6.06rem] flex flex-col items-center justify-start text-[2rem] text-darkslateblue-300"
+                    >
+                      <div
+                        class="self-stretch h-[8.75rem] relative rounded-[50%] bg-white z-[3]"
+                      ></div>
+                      <div
+                        class="w-[6.31rem] h-[1.75rem] relative flex items-center justify-center shrink-0 z-[4] mt-[-5.5rem] mq450:text-[1.19rem] mq1050:text-[1.63rem]"
+                      >
+                        68%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex-1 rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] flex flex-col items-center justify-start pt-[1.25rem] pb-[1.75rem] pr-[0.75rem] pl-[0.88rem] box-border min-w-[13.56rem] max-w-[13.81rem]"
+            >
+              <div
+                class="w-[13.81rem] h-[15.31rem] relative rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] hidden z-[1]"
+              ></div>
+              <div
+                class="self-stretch flex flex-col items-center justify-start gap-[0.75rem]"
+              >
+                <h3
+                  class="m-0 self-stretch h-[1.75rem] relative text-inherit font-bold font-inherit flex items-center justify-center shrink-0 z-[1]"
+                >
+                  Stat title here
+                </h3>
+                <div
+                  class="self-stretch flex flex-row items-center justify-center py-[0rem] px-[1.19rem]"
+                >
+                  <div class="h-[9.81rem] flex-1 relative">
+                    <div
+                      class="absolute top-[0rem] left-[0rem] rounded-[50%] bg-whitesmoke-100 w-full h-full z-[1]"
+                    ></div>
+                    <div
+                      class="absolute top-[0rem] left-[0rem] rounded-[50%] bg-royalblue w-full h-full z-[2]"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[1.44rem] pl-[1.69rem] mt-[-1.19rem] text-[1rem] text-darkslateblue-200"
+              >
+                <div
+                  class="flex-1 flex flex-row items-start justify-between gap-[1.25rem]"
+                >
+                  <b
+                    class="w-[1.75rem] relative flex items-center justify-center shrink-0 z-[4]"
+                    >00</b
+                  >
+                  <div
+                    class="w-[3rem] flex flex-row items-start justify-start relative"
+                  >
+                    <b class="flex-1 relative z-[4]">100</b>
+                    <div
+                      class="h-[8.75rem] w-[8.75rem] my-0 mx-[!important] absolute top-[-8.06rem] left-[-6.06rem] flex flex-col items-center justify-start text-[2rem] text-darkslateblue-300"
+                    >
+                      <div
+                        class="self-stretch h-[8.75rem] relative rounded-[50%] bg-white z-[3]"
+                      ></div>
+                      <div
+                        class="w-[6.31rem] h-[1.75rem] relative flex items-center justify-center shrink-0 z-[4] mt-[-5.5rem] mq450:text-[1.19rem] mq1050:text-[1.63rem]"
+                      >
+                        68%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex-1 rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] flex flex-col items-center justify-start py-[1.25rem] pr-[0.75rem] pl-[0.88rem] box-border gap-[4.56rem] min-w-[13.56rem] max-w-[13.81rem] min-h-[15.31rem] lg:min-h-[auto]"
+            >
+              <div
+                class="w-[13.81rem] h-[15.31rem] relative rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] hidden"
+              ></div>
+              <h3
+                class="m-0 self-stretch h-[1.75rem] relative text-inherit font-bold font-inherit flex items-center justify-center shrink-0 z-[1]"
+              >
+                Stat title here
+              </h3>
+              <div
+                class="w-[6.31rem] h-[1.75rem] relative text-[2.25rem] font-semibold font-poppins flex items-center justify-center shrink-0 z-[1] mq450:text-[1.38rem] mq1050:text-[1.81rem]"
+              >
+                68%
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.reportsParent}>
-          <div className={styles.reports}>
-            <div className={styles.bg1} />
-            <img className={styles.lineIcon} alt="" src={line} />
-            <div className={styles.number}>
-              <div className={styles.div9}>100</div>
-              <div className={styles.div10}>80</div>
-              <div className={styles.div11}>60</div>
-              <div className={styles.div12}>40</div>
-              <div className={styles.div13}>20</div>
-              <div className={styles.div14}>0</div>
-            </div>
-            <div className={styles.time}>
-              <div className={styles.am}>10am</div>
-              <div className={styles.am1}>11am</div>
-              <div className={styles.am2}>12am</div>
-              <div className={styles.am3}>01am</div>
-              <div className={styles.am4}>02am</div>
-              <div className={styles.am5}>03am</div>
-              <div className={styles.am6}>04am</div>
-              <div className={styles.am7}>05am</div>
-              <div className={styles.am8}>06am</div>
-              <div className={styles.am9}>07am</div>
-            </div>
+          <div
+            class="self-stretch flex flex-row items-start justify-start gap-[0.63rem] max-w-full text-left text-[1rem] text-bodytext-50 font-poppins"
+          >
+            <div
+              class="flex-1 flex flex-col items-start justify-start gap-[0.75rem] max-w-[calc(100%_-_231px)] mq1050:max-w-full"
+            >
+              <div
+                class="self-stretch flex flex-row items-start justify-center gap-[0.63rem] mq1050:flex-wrap"
+              >
+                <div
+                  class="flex-[0.933] rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] flex flex-col items-center justify-start py-[1.25rem] pr-[0.75rem] pl-[0.88rem] box-border gap-[4.56rem] min-w-[13.56rem] max-w-[13.81rem] min-h-[15.31rem] text-center text-[1.13rem] text-darkslateblue-300 font-lato mq450:flex-1 mq1050:min-h-[auto]"
+                >
+                  <div
+                    class="w-[13.81rem] h-[15.31rem] relative rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] hidden"
+                  ></div>
+                  <h3
+                    class="m-0 self-stretch h-[1.75rem] relative text-inherit font-bold font-inherit flex items-center justify-center shrink-0 z-[1]"
+                  >
+                    Stat title here
+                  </h3>
+                  <div
+                    class="w-[6.31rem] h-[1.75rem] relative text-[2.25rem] font-semibold font-poppins flex items-center justify-center shrink-0 z-[1] mq450:text-[1.38rem] mq1050:text-[1.81rem]"
+                  >
+                    68%
+                  </div>
+                </div>
+                <div
+                  class="flex-1 rounded-3xs bg-white flex flex-col items-center justify-start pt-[0.63rem] px-[0.38rem] pb-[0.38rem] box-border gap-[3.13rem] min-w-[13.56rem] max-w-[13.81rem]"
+                >
+                  <div
+                    class="w-[13.81rem] h-[15.31rem] relative rounded-3xs bg-white hidden"
+                  ></div>
+                  <div
+                    class="self-stretch h-[1.48rem] overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0rem] px-[0.06rem] box-border z-[1]"
+                  >
+                    <div
+                      class="h-[1.44rem] flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0rem] box-border"
+                    >
+                      <div class="relative leading-[1.75rem] font-semibold">
+                        Reports
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-[0rem] px-[0.19rem] text-right text-[0.75rem] text-darkslateblue-100"
+                  >
+                    <div
+                      class="w-[6.69rem] flex flex-col items-start justify-start gap-[1rem]"
+                    >
+                      <div
+                        class="w-[0.44rem] flex flex-col items-start justify-start gap-[0.81rem]"
+                      >
+                        <div
+                          class="h-[1.38rem] relative inline-block shrink-0 z-[2]"
+                        >
+                          0
+                        </div>
+                        <div class="relative z-[2]">0</div>
+                      </div>
+                      <div
+                        class="self-stretch flex flex-row items-start justify-between relative gap-[1.25rem]"
+                      >
+                        <div
+                          class="w-[0.44rem] flex flex-col items-end justify-start gap-[1rem]"
+                        >
+                          <div class="relative z-[2]">0</div>
+                          <div class="relative z-[2]">0</div>
+                          <div class="relative z-[2]">0</div>
+                        </div>
+                        <div
+                          class="h-[4.99rem] w-[0.06rem] relative box-border z-[1] border-r-[1px] border-dashed border-coral-100"
+                        ></div>
+                        <img
+                          class="h-[5rem] w-[10.63rem] absolute my-0 mx-[!important] top-[-2.54rem] right-[-5.31rem] z-[2]"
+                          loading="eager"
+                          alt=""
+                          src={Group239444}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-1 rounded-3xs bg-white flex flex-col items-center justify-start pt-[0.63rem] px-[0.38rem] pb-[0.38rem] box-border gap-[3.13rem] min-w-[13.56rem] max-w-[13.81rem]"
+                >
+                  <div
+                    class="w-[13.81rem] h-[15.31rem] relative rounded-3xs bg-white hidden"
+                  ></div>
+                  <div
+                    class="self-stretch h-[1.48rem] overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0rem] px-[0.06rem] box-border z-[1]"
+                  >
+                    <div
+                      class="h-[1.44rem] flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0rem] box-border"
+                    >
+                      <div class="relative leading-[1.75rem] font-semibold">
+                        Reports
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-[0rem] px-[0.19rem] text-right text-[0.75rem] text-darkslateblue-100"
+                  >
+                    <div
+                      class="w-[6.69rem] flex flex-col items-start justify-start gap-[1rem]"
+                    >
+                      <div
+                        class="w-[0.44rem] flex flex-col items-start justify-start gap-[0.81rem]"
+                      >
+                        <div
+                          class="h-[1.38rem] relative inline-block shrink-0 z-[2]"
+                        >
+                          0
+                        </div>
+                        <div class="relative z-[2]">0</div>
+                      </div>
+                      <div
+                        class="self-stretch flex flex-row items-start justify-between relative gap-[1.25rem]"
+                      >
+                        <div
+                          class="w-[0.44rem] flex flex-col items-end justify-start gap-[1rem]"
+                        >
+                          <div class="relative z-[2]">0</div>
+                          <div class="relative z-[2]">0</div>
+                          <div class="relative z-[2]">0</div>
+                        </div>
+                        <div
+                          class="h-[4.99rem] w-[0.06rem] relative box-border z-[1] border-r-[1px] border-dashed border-coral-100"
+                        ></div>
+                        <img
+                          class="h-[5rem] w-[10.63rem] absolute my-0 mx-[!important] top-[-2.54rem] right-[-5.31rem] z-[2]"
+                          loading="eager"
+                          alt=""
+                          src={Group239444}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-1 rounded-3xs bg-white flex flex-col items-center justify-start pt-[0.63rem] px-[0.38rem] pb-[0.38rem] box-border gap-[3.13rem] min-w-[13.56rem] max-w-[13.81rem]"
+                >
+                  <div
+                    class="w-[13.81rem] h-[15.31rem] relative rounded-3xs bg-white hidden"
+                  ></div>
+                  <div
+                    class="self-stretch h-[1.48rem] overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0rem] px-[0.06rem] box-border z-[1]"
+                  >
+                    <div
+                      class="h-[1.44rem] flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0rem] box-border"
+                    >
+                      <div class="relative leading-[1.75rem] font-semibold">
+                        Reports
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-[0rem] px-[0.19rem] text-right text-[0.75rem] text-darkslateblue-100"
+                  >
+                    <div
+                      class="w-[6.69rem] flex flex-col items-start justify-start gap-[1rem]"
+                    >
+                      <div
+                        class="w-[0.44rem] flex flex-col items-start justify-start gap-[0.81rem]"
+                      >
+                        <div
+                          class="h-[1.38rem] relative inline-block shrink-0 z-[2]"
+                        >
+                          0
+                        </div>
+                        <div class="relative z-[2]">0</div>
+                      </div>
+                      <div
+                        class="self-stretch flex flex-row items-start justify-between relative gap-[1.25rem]"
+                      >
+                        <div
+                          class="w-[0.44rem] flex flex-col items-end justify-start gap-[1rem]"
+                        >
+                          <div class="relative z-[2]">0</div>
+                          <div class="relative z-[2]">0</div>
+                          <div class="relative z-[2]">0</div>
+                        </div>
+                        <div
+                          class="h-[4.99rem] w-[0.06rem] relative box-border z-[1] border-r-[1px] border-dashed border-coral-100"
+                        ></div>
+                        <img
+                          class="h-[5rem] w-[10.63rem] absolute my-0 mx-[!important] top-[-2.54rem] right-[-5.31rem] z-[2]"
+                          loading="eager"
+                          alt=""
+                          src={Group239444}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-1 rounded-3xs bg-white flex flex-col items-center justify-start pt-[0.63rem] px-[0.38rem] pb-[0.38rem] box-border gap-[3.13rem] min-w-[13.56rem] max-w-[13.81rem]"
+                >
+                  <div
+                    class="w-[13.81rem] h-[15.31rem] relative rounded-3xs bg-white hidden"
+                  ></div>
+                  <div
+                    class="self-stretch h-[1.48rem] overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0rem] px-[0.06rem] box-border z-[1]"
+                  >
+                    <div
+                      class="h-[1.44rem] flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0rem] box-border"
+                    >
+                      <div class="relative leading-[1.75rem] font-semibold">
+                        Reports
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-[0rem] px-[0.19rem] text-right text-[0.75rem] text-darkslateblue-100"
+                  >
+                    <div
+                      class="w-[6.69rem] flex flex-col items-start justify-start gap-[1rem]"
+                    >
+                      <div
+                        class="w-[0.44rem] flex flex-col items-start justify-start gap-[0.81rem]"
+                      >
+                        <div
+                          class="h-[1.38rem] relative inline-block shrink-0 z-[2]"
+                        >
+                          0
+                        </div>
+                        <div class="relative z-[2]">0</div>
+                      </div>
+                      <div
+                        class="self-stretch flex flex-row items-start justify-between relative gap-[1.25rem]"
+                      >
+                        <div
+                          class="w-[0.44rem] flex flex-col items-end justify-start gap-[1rem]"
+                        >
+                          <div class="relative z-[2]">0</div>
+                          <div class="relative z-[2]">0</div>
+                          <div class="relative z-[2]">0</div>
+                        </div>
+                        <div
+                          class="h-[4.99rem] w-[0.06rem] relative box-border z-[1] border-r-[1px] border-dashed border-coral-100"
+                        ></div>
+                        <img
+                          class="h-[5rem] w-[10.63rem] absolute my-0 mx-[!important] top-[-2.54rem] right-[-5.31rem] z-[2]"
+                          loading="eager"
+                          alt=""
+                          src={Group239444}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-[69.81rem] flex flex-row items-start justify-center gap-[1rem] max-w-full mq1050:flex-wrap"
+              >
+                <div
+                  class="w-[33.5rem] rounded-3xs bg-white flex flex-col items-center justify-start pt-[0.63rem] px-[0.31rem] pb-[0.31rem] box-border gap-[1.75rem] min-w-[33.5rem] max-w-full mq750:min-w-full mq1050:flex-1"
+                >
+                  <div
+                    class="self-stretch h-[15.31rem] relative rounded-3xs bg-white hidden"
+                  ></div>
+                  <div
+                    class="self-stretch h-[1.48rem] overflow-hidden shrink-0 flex flex-row items-center justify-between py-[0rem] pr-[0.81rem] pl-[0.75rem] box-border gap-[1.25rem] z-[1]"
+                  >
+                    <div
+                      class="h-[1.44rem] w-[7.69rem] flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0rem] box-border"
+                    >
+                      <div
+                        class="self-stretch h-[1.63rem] flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0rem] box-border"
+                      >
+                        <div
+                          class="self-stretch relative leading-[1.75rem] font-semibold"
+                        >
+                          Reports
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      class="h-[0.22rem] w-[0.88rem] relative object-contain"
+                      loading="eager"
+                      alt=""
+                      src="/public/menu@2x.png"
+                    />
+                  </div>
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0.81rem] pl-[1rem] box-border max-w-full text-right text-[0.75rem] text-darkslateblue-100"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-end justify-start gap-[0.69rem] max-w-full mq750:flex-wrap"
+                    >
+                      <div
+                        class="w-[0.81rem] flex flex-col items-start justify-start gap-[0.81rem]"
+                      >
+                        <div
+                          class="h-[1.38rem] relative inline-block shrink-0 z-[6]"
+                        >
+                          00
+                        </div>
+                        <div
+                          class="self-stretch flex flex-col items-start justify-start gap-[1rem]"
+                        >
+                          <div class="relative z-[6]">00</div>
+                          <div class="relative z-[6]">00</div>
+                          <div class="relative z-[6]">00</div>
+                          <div class="self-stretch h-[1.13rem] relative">
+                            <div
+                              class="absolute top-[0rem] left-[0rem] inline-block w-full h-full z-[6]"
+                            >
+                              00
+                            </div>
+                            <div
+                              class="absolute top-[0rem] left-[0rem] w-full h-full"
+                            >
+                              <div
+                                class="absolute top-[0rem] left-[0rem] inline-block w-full h-full z-[7]"
+                              >
+                                00
+                              </div>
+                              <div
+                                class="absolute top-[0rem] left-[0rem] inline-block w-full h-full z-[8]"
+                              >
+                                00
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.31rem] box-border min-w-[19.19rem] max-w-full"
+                      >
+                        <div
+                          class="self-stretch flex flex-col items-center justify-start pt-[1.63rem] px-[0rem] pb-[0.13rem] box-border relative max-w-full"
+                        >
+                          <img
+                            class="w-full h-full absolute my-0 mx-[!important] top-[0.03rem] right-[-0.01rem] bottom-[0.1rem] max-h-full z-[1]"
+                            alt=""
+                            src="/public/line.svg"
+                          />
 
-            <img className={styles.vectorIcon} src={reportFrame} />
-            <img className={styles.vectorIcon1} alt="" src={vector1} />
-            <img className={styles.elipesIcon} alt="" src={elipes} />
-            <div className={styles.reportsGroup}>
-              <div className={styles.reports1}>Reports</div>
-              <img className={styles.menuIcon} alt="" src={menu} />
-            </div>
-            <div className={styles.toolTip}>
-              <div className={styles.union}>
-                <div className={styles.unionChild} />
-                <img className={styles.unionItem} alt="" src="Polygon 2.svg" />
-              </div>
-              <div className={styles.created}>14 Created</div>
-              <div className={styles.completes}>17 Completes</div>
-            </div>
-            <div className={styles.reportsChild} />
-          </div>
-          <div className={styles.frameParent1}>
-            <div className={styles.performanceParent}>
-              <div className={styles.performance}>Performance</div>
-              <img className={styles.menuIcon1} alt="" src={menu} />
-            </div>
-            <div className={styles.groupWrapper}>
-              <div className={styles.donoughtChartParent}>
-                <img
-                  className={styles.donoughtChartIcon}
-                  alt=""
-                  src={donoughtChart}
-                />
-                <div className={styles.ellipseDiv} />
-                <div className={styles.text1}>
-                  <b className={styles.b}>80</b>
-                  <div className={styles.score}>Score</div>
+                          <div
+                            class="self-stretch flex flex-row items-center justify-center max-w-full"
+                          >
+                            <div class="h-[7.94rem] flex-1 relative max-w-full">
+                              <img
+                                class="absolute top-[-0.01rem] left-[0.02rem] w-full h-full z-[2]"
+                                alt=""
+                                src="/public/vector-11.svg"
+                              />
+
+                              <div
+                                class="absolute top-[1.31rem] left-[0.13rem] w-[29.44rem] h-[6.5rem]"
+                              >
+                                <div
+                                  class="absolute top-[-0.01rem] left-[-0.01rem] w-full h-full z-[3] flex items-center justify-center"
+                                >
+                                  <img
+                                    class="w-full h-full z-[3] object-contain absolute left-[0rem] top-[0.25rem] [transform:scale(1.116)]"
+                                    alt=""
+                                    src="/public/vector-22.svg"
+                                  />
+                                </div>
+                                <img
+                                  class="absolute top-[0.31rem] left-[5.54rem] w-[20.59rem] h-[4.28rem] z-[4]"
+                                  loading="eager"
+                                  alt=""
+                                  src="/public/elipes.svg"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="w-[0.06rem] h-[4.99rem] relative box-border z-[5] mt-[-3.69rem] border-r-[1px] border-dashed border-coral-100"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-1 rounded-3xs bg-white flex flex-col items-center justify-start pt-[0.63rem] pb-[0.31rem] pr-[1.13rem] pl-[1.19rem] box-border gap-[1.75rem] min-w-[22.94rem] max-w-full mq750:min-w-full"
+                >
+                  <div
+                    class="w-[35.31rem] h-[15.31rem] relative rounded-3xs bg-white hidden max-w-full"
+                  ></div>
+                  <div
+                    class="self-stretch h-[1.48rem] overflow-hidden shrink-0 flex flex-row items-center justify-between gap-[1.25rem] z-[1]"
+                  >
+                    <div
+                      class="h-[1.44rem] w-[7.69rem] flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0rem] box-border"
+                    >
+                      <div
+                        class="self-stretch h-[1.63rem] flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0rem] box-border"
+                      >
+                        <div
+                          class="self-stretch relative leading-[1.75rem] font-semibold"
+                        >
+                          Reports
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      class="h-[0.22rem] w-[0.88rem] relative object-contain"
+                      loading="eager"
+                      alt=""
+                      src="/public/menu-1@2x.png"
+                    />
+                  </div>
+                  <div
+                    class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.31rem] box-border max-w-full text-right text-[0.75rem] text-darkslateblue-100"
+                  >
+                    <div
+                      class="flex-1 flex flex-row items-end justify-start gap-[0.69rem] max-w-full mq750:flex-wrap"
+                    >
+                      <div
+                        class="w-[0.81rem] flex flex-col items-start justify-start gap-[0.81rem]"
+                      >
+                        <div
+                          class="h-[1.38rem] relative inline-block shrink-0 z-[6]"
+                        >
+                          00
+                        </div>
+                        <div
+                          class="self-stretch flex flex-col items-start justify-start gap-[1rem]"
+                        >
+                          <div class="relative z-[6]">00</div>
+                          <div class="relative z-[6]">00</div>
+                          <div class="relative z-[6]">00</div>
+                          <div class="self-stretch h-[1.13rem] relative">
+                            <div
+                              class="absolute top-[0rem] left-[0rem] inline-block w-full h-full z-[6]"
+                            >
+                              00
+                            </div>
+                            <div
+                              class="absolute top-[0rem] left-[0rem] w-full h-full"
+                            >
+                              <div
+                                class="absolute top-[0rem] left-[0rem] inline-block w-full h-full z-[7]"
+                              >
+                                00
+                              </div>
+                              <div
+                                class="absolute top-[0rem] left-[0rem] inline-block w-full h-full z-[8]"
+                              >
+                                00
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex-1 flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.31rem] box-border min-w-[20.25rem] max-w-full"
+                      >
+                        <div
+                          class="self-stretch flex flex-col items-center justify-start pt-[1.63rem] pb-[0.13rem] pr-[0.06rem] pl-[0rem] relative"
+                        >
+                          <img
+                            class="w-full h-full absolute my-0 mx-[!important] top-[0.03rem] right-[0.05rem] bottom-[0.1rem] max-h-full z-[1]"
+                            alt=""
+                            src="/public/line-1.svg"
+                          />
+
+                          <div class="self-stretch h-[7.94rem] relative">
+                            <img
+                              class="absolute top-[-0.01rem] left-[-0.01rem] w-full h-full z-[2]"
+                              alt=""
+                              src="/public/vector-31.svg"
+                            />
+
+                            <div
+                              class="absolute top-[1.31rem] left-[0.06rem] w-[31.06rem] h-[6.5rem]"
+                            >
+                              <div
+                                class="absolute top-[-0.01rem] left-[0.02rem] w-full h-full z-[3] flex items-center justify-center"
+                              >
+                                <img
+                                  class="w-full h-full z-[3] object-contain absolute left-[0rem] top-[0.25rem] [transform:scale(1.116)]"
+                                  alt=""
+                                  src="/public/vector-41.svg"
+                                />
+                              </div>
+                              <img
+                                class="absolute top-[0.31rem] left-[5.88rem] w-[21.71rem] h-[4.28rem] z-[4]"
+                                loading="eager"
+                                alt=""
+                                src="/public/elipes-1.svg"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="w-[0.06rem] h-[4.99rem] relative box-border z-[5] mt-[-3.69rem] border-r-[1px] border-dashed border-coral-100"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className={styles.indicator}>
-              <div className={styles.completedParent}>
-                <div className={styles.completed}>Completed</div>
-                <div className={styles.rectangleDiv} />
+            <div
+              class="h-[31.44rem] w-[13.81rem] flex flex-col items-start justify-start gap-[0.75rem] mq1050:hidden"
+            >
+              <div
+                class="self-stretch rounded-3xs bg-white flex flex-col items-center justify-start pt-[0.63rem] px-[0.38rem] pb-[0.38rem] gap-[3.13rem]"
+              >
+                <div
+                  class="w-[13.81rem] h-[15.31rem] relative rounded-3xs bg-white hidden"
+                ></div>
+                <div
+                  class="self-stretch h-[1.48rem] overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0rem] px-[0.06rem] box-border z-[1]"
+                >
+                  <div
+                    class="h-[1.44rem] flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0rem] box-border"
+                  >
+                    <div class="relative leading-[1.75rem] font-semibold">
+                      Reports
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="self-stretch flex flex-row items-start justify-start py-[0rem] px-[0.19rem] text-right text-[0.75rem] text-darkslateblue-100"
+                >
+                  <div
+                    class="w-[6.69rem] flex flex-col items-start justify-start gap-[1rem]"
+                  >
+                    <div
+                      class="w-[0.44rem] flex flex-col items-start justify-start gap-[0.81rem]"
+                    >
+                      <div
+                        class="h-[1.38rem] relative inline-block shrink-0 z-[2]"
+                      >
+                        0
+                      </div>
+                      <div class="relative z-[2]">0</div>
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-between relative gap-[1.25rem]"
+                    >
+                      <div
+                        class="w-[0.44rem] flex flex-col items-end justify-start gap-[1rem]"
+                      >
+                        <div class="relative z-[2]">0</div>
+                        <div class="relative z-[2]">0</div>
+                        <div class="relative z-[2]">0</div>
+                      </div>
+                      <div
+                        class="h-[4.99rem] w-[0.06rem] relative box-border z-[1] border-r-[1px] border-dashed border-coral-100"
+                      ></div>
+                      <img
+                        class="h-[5rem] w-[10.63rem] absolute my-0 mx-[!important] top-[-2.54rem] right-[-5.31rem] z-[2]"
+                        loading="eager"
+                        alt=""
+                        src={Group239444}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className={styles.distributeParent}>
-                <div className={styles.distribute}>Distribute</div>
-                <div className={styles.frameChild3} />
-              </div>
-              <div className={styles.returnParent}>
-                <div className={styles.return}>Return</div>
-                <div className={styles.frameChild4} />
+              <div
+                class="self-stretch flex-1 rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] flex flex-col items-center justify-start py-[1.25rem] pr-[0.75rem] pl-[0.88rem] gap-[4.56rem] text-center text-[1.13rem] text-darkslateblue-300 font-lato"
+              >
+                <div
+                  class="w-[13.81rem] h-[15.31rem] relative rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] hidden"
+                ></div>
+                <h3
+                  class="m-0 self-stretch h-[1.75rem] relative text-inherit font-bold font-inherit flex items-center justify-center shrink-0 z-[1]"
+                >
+                  Stat title here
+                </h3>
+                <div
+                  class="w-[6.31rem] h-[1.75rem] relative text-[2.25rem] font-semibold font-poppins flex items-center justify-center shrink-0 z-[1] mq450:text-[1.38rem] mq1050:text-[1.81rem]"
+                >
+                  68%
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
+   
     </>
   );
 };
