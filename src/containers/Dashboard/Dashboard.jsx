@@ -815,7 +815,7 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
-              <div
+              {/* <div
                 class="self-stretch flex-1 rounded-mini bg-white shadow-[0px_23px_28.6px_rgba(0,_0,_0,_0.03)] flex flex-col items-center justify-start py-[1.25rem] pr-[0.75rem] pl-[0.88rem] gap-[4.56rem] text-center text-[1.13rem] text-darkslateblue-300 font-lato"
               >
                 <div
@@ -831,7 +831,7 @@ const Dashboard = () => {
                 >
                   68%
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
