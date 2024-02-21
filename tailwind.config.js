@@ -12,6 +12,7 @@ module.exports = {
           "100": "#ff8548",
           "200": "rgba(255, 133, 72, 0.1)",
         },
+        orange: "#FF8548",
         whitesmoke: "#ededed",
         "bodytext-50": "#5d5b73",
         "text-100": "#1a1a1a",

@@ -13,21 +13,26 @@ import ChangePassword from "./containers/ChangePassword/ChangePassword.jsx";
 import AddNewWorkspace from "./containers/Workspace/AddNewWorkspace.jsx";
 import AddNewWorkflow from "./containers/Workflows/AddNewWorkflow.jsx";
 import AddNewContainer from "./containers/Container/AddNewContainer.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import SignUp from "./containers/SignUp/SignUp.jsx";
 
 function App() {
   const location = useLocation();
   
   const isLoginPage = location.pathname === "/login";
+  const issignUpPage = location.pathname === "/signUp";
   const isDash = location.pathname === "/";
+
   return (
     <>
       <div className="App">
-        {!isLoginPage && <Sidebar />}
-        {!isLoginPage && !isDash && <Navbar />}
+        {!isLoginPage && !issignUpPage && <Sidebar />}
+        {!isLoginPage  && !issignUpPage && <Navbar />}
 
 
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path="/signUp" element={<SignUp />} />
           <Route path="/" element={<Dashboard />} />
           <Route path="/workspace" element={<Workspace />} />
           <Route path="/addNewWorkspace" element={<AddNewWorkspace/>}/>
@@ -39,6 +44,7 @@ function App() {
           <Route path="/addMember" element={<AddMember/>} />
           <Route path="/changePassword" element={<ChangePassword/>} />
         </Routes>
+        {!isLoginPage && !issignUpPage && <Footer />}
       </div>
     </>
   );

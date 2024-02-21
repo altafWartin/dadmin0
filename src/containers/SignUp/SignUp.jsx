@@ -1,16 +1,10 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Login.css"; // Import your component-specific CSS file
+import React from "react";
 import logo from "../../assets/logo.svg";
 import google from "../../assets/Icon/google.png";
 import twitter from "../../assets/Icon/twitter.png";
+import { Link } from "react-router-dom";
 
-const Login = () => {
-  const [formType, setFormType] = useState("signup");
-
-  const handleSlideChange = (event) => {
-    setFormType(event.target.id);
-  };
+const SignUp = () => {
   return (
     <div>
       <div class="w-full relative px-[450px] pt-[50px] pb-[50px] bg-ghostwhite shadow-[0px_4px_74px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[5.75rem] box-border gap-[18.31rem] tracking-[normal] mq700:gap-[18.31rem] mq950:flex-wrap mq975:gap-[18.31rem]">
@@ -24,9 +18,21 @@ const Login = () => {
             />
 
             <h3 class="m-0 relative text-[1.25rem] leading-[2.5rem] capitalize font-medium font-poppins text-darkslategray-100 text-left whitespace-nowrap z-[3] mq450:text-[1rem] mq450:leading-[2rem]">
-              Sign In
+              sign up
             </h3>
-          
+            <div class="self-stretch flex flex-col items-start justify-start pt-[0.25rem] px-[0rem] pb-[0.19rem] relative gap-[0.44rem] z-[3]">
+              <div class="flex flex-row items-start justify-start py-[0rem] px-[0.5rem]">
+                <div class="relative text-[0.88rem] leading-[1.13rem] uppercase font-semibold font-poppins text-dimgray-200 text-left">
+                  First Name
+                </div>
+              </div>
+
+              <input
+                class="[outline:none] bg-[transparent] px-3 self-stretch h-[3.13rem] relative rounded-lg box-border min-w-[14.69rem] border-[1px] border-solid border-darkslategray-200"
+                type="text"
+                placeholder="First Name"
+              />
+            </div>
             <div class="self-stretch flex flex-col items-start justify-start pt-[0.25rem] px-[0rem] pb-[0.19rem] relative gap-[0.44rem] z-[3]">
               <div class="flex flex-row items-start justify-start py-[0rem] px-[0.5rem]">
                 <div class="relative text-[0.88rem] leading-[1.13rem] uppercase font-semibold font-poppins text-dimgray-200 text-left">
@@ -59,7 +65,7 @@ const Login = () => {
             <button class="cursor-pointer [border:none] p-[0.31rem] bg-orange self-stretch rounded-lg flex flex-row items-center justify-center box-border max-w-full whitespace-nowrap z-[3] hover:bg-chocolate">
               <div class="h-[3.13rem] w-[24.44rem] relative rounded-lg bg-coral hidden max-w-full"></div>
               <div class="relative text-[1.25rem] leading-[2.5rem]  capitalize font-semibold font-poppins text-white text-left z-[4]">
-                Sign In
+                sign up
               </div>
             </button>
             <div class="self-stretch flex-1 flex flex-col items-start justify-start max-w-full">
@@ -73,7 +79,7 @@ const Login = () => {
                   />
 
                   <div class="relative text-[0.94rem] leading-[1.25rem] font-medium font-poppins text-dimgray-200 text-left z-[5]">
-                    Sing In with Google
+                    Sing Up with Google
                   </div>
                 </button>
               </div>
@@ -87,7 +93,7 @@ const Login = () => {
                   />
 
                   <div class="relative text-[0.94rem] leading-[1.25rem] font-medium font-poppins text-dimgray-200 text-left z-[5]">
-                    Sing In with Twitter
+                    Sing Up with Twitter
                   </div>
                 </button>
               </div>
@@ -97,115 +103,14 @@ const Login = () => {
             <div class="relative text-[0.88rem] leading-[1.25rem] font-poppins text-dimgray-200 text-left z-[3]">
               Already have an Account?
             </div>
-            <Link to='/signUp' class="relative text-[0.94rem] leading-[1.25rem] font-medium font-poppins text-coral text-left z-[3]">
-              SingUp
+            <Link to='/login' class="relative text-[0.94rem] leading-[1.25rem] font-medium font-poppins text-coral text-left z-[3]">
+              Sing In
             </Link>
           </div>
         </form>
       </div>
     </div>
-    // <div className="Loginbody">
-    //   <div className="wrapper">
-    //     <div className="titlee-text">
-    //     {formType === "login" && (
-    //       <div className="loginTitle">
-    //         Login Form
-    //       </div>
-    //     )}
-    //   {formType === "signup" && (
-    //       <div className="signupTitle">
-    //         Signup Form
-    //       </div>
-    //   )}
-    //     </div>
-
-    //     <div className="form-container">
-    //       <div className="slide-controls">
-    //         <input
-    //           type="radio"
-    //           name="slide"
-    //           id="login"
-    //           checked={formType === "login"}
-    //           onChange={handleSlideChange}
-    //         />
-    //         <input
-    //           type="radio"
-    //           name="slide"
-    //           id="signup"
-    //           checked={formType === "signup"}
-    //           onChange={handleSlideChange}
-    //         />
-    //         <label
-    //           htmlFor="login"
-    //           className={`slide login ${formType === "login" ? "active" : ""}`}
-    //         >
-    //           Login
-    //         </label>
-    //         <label
-    //           htmlFor="signup"
-    //           className={`slide signup ${
-    //             formType === "signup" ? "active" : ""
-    //           }`}
-    //         >
-    //           Signup
-    //         </label>
-    //         <div className="slider-tab"></div>
-    //       </div>
-    //       <div className="form-inner">
-    //         {formType === "login" && (
-    //           <form
-    //             action="#"
-    //             className={`login ${formType === "login" ? "active" : ""}`}
-    //           >
-    //             <div className="field">
-    //               <input type="text" placeholder="Email Address" required />
-    //             </div>
-    //             <div className="field">
-    //               <input type="password" placeholder="Password" required />
-    //             </div>
-    //             <div className="pass-link">
-    //               <a href="#">Forgot password?</a>
-    //             </div>
-    //             <div className="field btn">
-    //               <Link to="/">
-    //                 <div className="btn-layer"></div>
-    //                 <input type="submit" value="Login" />
-    //               </Link>
-    //             </div>
-    //             <div className="signup-link">
-    //               Not a member? <a href="">Signup now</a>
-    //             </div>
-    //           </form>
-    //         )}
-    //         {formType === "signup" && (
-    //           <form
-    //             action="#"
-    //             className={`signup ${formType === "signup" ? "active" : ""}`}
-    //           >
-    //             <div className="field">
-    //               <input type="text" placeholder="Email Address" required />
-    //             </div>
-    //             <div className="field">
-    //               <input type="password" placeholder="Password" required />
-    //             </div>
-    //             <div className="field">
-    //               <input
-    //                 type="password"
-    //                 placeholder="Confirm password"
-    //                 required
-    //               />
-    //             </div>
-    //             <div className="field btn">
-    //               <div className="btn-layer"></div>
-    //               <input type="submit" value="Signup" />
-    //             </div>
-    //           </form>
-    //         )}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
-export default Login;
+export default SignUp;
