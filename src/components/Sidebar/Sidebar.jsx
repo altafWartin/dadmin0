@@ -27,33 +27,107 @@ const Sidebar = () => {
         <div className={styles.menuSidebarWrapper}>
           <div className={styles.menuSidebar}>
             <div className={styles.frameParent}>
-              <Link to="/" className={styles.linkText} onClick={() => handleLinkClick("/")}>
-                <div className={`${styles.iconcalendarParent} ${isLinkActive("/") && styles.active}`}>
-                  <img className={styles.vuesaxboldelement3Icon} alt="" src={element} />
+              <Link
+                to="/"
+                className={styles.linkText}
+                onClick={() => handleLinkClick("/")}
+              >
+                <div
+                  className={`${styles.iconcalendarParent} ${
+                    isLinkActive("/") && styles.active
+                  }`}
+                >
+                  <img
+                    className={styles.vuesaxboldelement3Icon}
+                    alt=""
+                    src={element}
+                  />
                   <div className={styles.workspace}>Dashboard</div>
                 </div>
               </Link>
-              <Link to="/workspace" className={styles.linkText} onClick={() => handleLinkClick("/workspace")}>
-                <div className={`${styles.iconcalendarParent} ${isLinkActive("/workspace") && styles.active}`}>
-                  <img className={styles.vuesaxboldelement3Icon} alt="" src={calander} />
+              <Link
+                to="/projects"
+                className={styles.linkText}
+                onClick={() => handleLinkClick("/projects")}
+              >
+                <div
+                  className={`${styles.iconcalendarParent} ${
+                    isLinkActive("/projects") && styles.active
+                  }`}
+                >
+                  <img className={styles.vuesaxboldelement3Icon} alt="" src={element} />
+                  <div className={styles.workspace}>Projects</div>
+                </div>
+              </Link>
+              <Link
+                to="/workspace"
+                className={styles.linkText}
+                onClick={() => handleLinkClick("/workspace")}
+              >
+                <div
+                  className={`${styles.iconcalendarParent} ${
+                    isLinkActive("/workspace") && styles.active
+                  }`}
+                >
+                  <img
+                    className={styles.vuesaxboldelement3Icon}
+                    alt=""
+                    src={calander}
+                  />
                   <div className={styles.workspace}>Workspace</div>
                 </div>
               </Link>
-              <Link to="/workflow" className={styles.linkText} onClick={() => handleLinkClick("/workflow")}>
-                <div className={`${styles.iconcalendarParent} ${isLinkActive("/workflow") && styles.active}`}>
-                  <img className={styles.vuesaxboldelement3Icon} alt="" src={workflow} />
+              <Link
+                to="/workflow"
+                className={styles.linkText}
+                onClick={() => handleLinkClick("/workflow")}
+              >
+                <div
+                  className={`${styles.iconcalendarParent} ${
+                    isLinkActive("/workflow") && styles.active
+                  }`}
+                >
+                  <img
+                    className={styles.vuesaxboldelement3Icon}
+                    alt=""
+                    src={workflow}
+                  />
                   <div className={styles.workspace}>Workflows</div>
                 </div>
               </Link>
-              <Link to="/container" className={styles.linkText} onClick={() => handleLinkClick("/container")}>
-                <div className={`${styles.iconcalendarParent} ${isLinkActive("/container") && styles.active}`}>
-                  <img className={styles.vuesaxboldelement3Icon} alt="" src={Contianer} />
+              <Link
+                to="/container"
+                className={styles.linkText}
+                onClick={() => handleLinkClick("/container")}
+              >
+                <div
+                  className={`${styles.iconcalendarParent} ${
+                    isLinkActive("/container") && styles.active
+                  }`}
+                >
+                  <img
+                    className={styles.vuesaxboldelement3Icon}
+                    alt=""
+                    src={Contianer}
+                  />
                   <div className={styles.workspace}>Container</div>
                 </div>
               </Link>
-              <Link to="/settings" className={styles.linkText} onClick={() => handleLinkClick("/settings")}>
-                <div className={`${styles.iconcalendarParent} ${isLinkActive("/settings") && styles.active}`}>
-                  <img className={styles.vuesaxboldelement3Icon} alt="" src={setting} />
+              <Link
+                to="/settings"
+                className={styles.linkText}
+                onClick={() => handleLinkClick("/settings")}
+              >
+                <div
+                  className={`${styles.iconcalendarParent} ${
+                    isLinkActive("/settings") && styles.active
+                  }`}
+                >
+                  <img
+                    className={styles.vuesaxboldelement3Icon}
+                    alt=""
+                    src={setting}
+                  />
                   <div className={styles.workspace}>Settings</div>
                 </div>
               </Link>

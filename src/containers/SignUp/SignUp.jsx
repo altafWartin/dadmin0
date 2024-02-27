@@ -79,7 +79,7 @@ const SignUp = () => {
                   />
 
                   <div class="relative text-[0.94rem] leading-[1.25rem] font-medium font-poppins text-dimgray-200 text-left z-[5]">
-                    Sing Up with Google
+                    Sign Up with Google
                   </div>
                 </button>
               </div>
@@ -93,7 +93,7 @@ const SignUp = () => {
                   />
 
                   <div class="relative text-[0.94rem] leading-[1.25rem] font-medium font-poppins text-dimgray-200 text-left z-[5]">
-                    Sing Up with Twitter
+                    Sign Up with Twitter
                   </div>
                 </button>
               </div>
@@ -104,7 +104,7 @@ const SignUp = () => {
               Already have an Account?
             </div>
             <Link to='/login' class="relative text-[0.94rem] leading-[1.25rem] font-medium font-poppins text-coral text-left z-[3]">
-              Sing In
+              Sign In
             </Link>
           </div>
         </form>

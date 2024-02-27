@@ -7,7 +7,6 @@ import setting from "../../assets/Icon/setting.svg";
 import ArrowRight from "../../assets/Icon/ArrowRight.svg";
 import logo from "../../assets/logo.svg";
 
-
 const AddNewWorkspace = () => {
   return (
     <>
@@ -19,7 +18,7 @@ const AddNewWorkspace = () => {
           <div class="self-stretch flex flex-row items-center justify-between gap-[4.25rem] max-w-full mq1050:flex-wrap">
             <div class="flex flex-row items-center justify-start gap-[0.31rem] max-w-full mq450:flex-wrap">
               <h2 class="m-0 h-[2.25rem] relative text-inherit tracking-[0.02em] font-semibold font-inherit flex items-center mq450:text-[1.19rem]">
-                List Workspaces
+                Workspaces
               </h2>
               <img
                 class="h-[0.69rem] w-[0.44rem] relative object-contain"
@@ -28,7 +27,7 @@ const AddNewWorkspace = () => {
               />
 
               <div class="relative text-[1rem] tracking-[0.02em] capitalize">
-                Add New Workspace form
+                Add Workspace
               </div>
             </div>
             <div class="flex flex-row items-start justify-end gap-[1.38rem] max-w-full text-right text-[0.75rem] mq450:flex-wrap">
@@ -97,108 +96,103 @@ const AddNewWorkspace = () => {
                 </div>
               </div>
             </div>
-            <div class="self-stretch flex flex-col items-start justify-start gap-[1.63rem] max-w-full">
+            <div class="self-stretch flex flex-col items-start justify-start gap-[0.5rem] max-w-full">
               <div class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[2.69rem] max-w-full mq450:gap-[2.69rem]">
-                <div class="flex-1 flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[1.38rem] min-w-[15.88rem] max-w-full z-[3]">
+                <div class="flex-1  flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[0.5rem] min-w-[15.88rem] max-w-full z-[3]">
+                  <label
+                    for="first_name"
+                    class="block ml-2 text-sm font-medium text-bodytext-50 dark:text-white"
+                  >
+                    NAME
+                  </label>
                   <input
-                    class="[outline:none] bg-[transparent] w-full h-[3.13rem] absolute my-0 mx-[!important] right-[0rem] bottom-[0.19rem] left-[0rem] rounded-lg box-border border-[1px] border-solid border-darkslategray-300"
                     type="text"
+                    id="name"
+                    class="bg-gray-50 border  h-[3.13rem] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-coral-100 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                    placeholder="Name"
+                    required
                   />
-
-                  <div class="relative text-[0.88rem] leading-[1.13rem] uppercase font-semibold font-poppins text-bodytext-50 text-left">
-                    Name
-                  </div>
-                  <div class="flex flex-row items-start justify-start py-[0rem] px-[0.5rem]">
-                    <div class="relative text-[0.88rem] leading-[1.25rem] font-poppins text-bodytext-50 text-left z-[1]">
-                      Name
-                    </div>
-                  </div>
                 </div>
-                <div class="flex-1 flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[1.38rem] min-w-[15.88rem] max-w-full z-[3]">
-                  <input
-                    class="[outline:none] bg-[transparent] w-full h-[3.13rem] absolute my-0 mx-[!important] right-[0rem] bottom-[0.19rem] left-[0rem] rounded-lg box-border border-[1px] border-solid border-darkslategray-300"
-                    type="text"
-                  />
-
-                  <div class="relative text-[0.88rem] leading-[1.13rem] uppercase font-semibold font-poppins text-bodytext-50 text-left">
+                <div class="flex-1 flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[0.5rem] min-w-[15.88rem] max-w-full z-[3]">
+                  <label
+                    for="first_name"
+                    class="block ml-2 text-sm uppercase font-medium text-bodytext-50 dark:text-white"
+                  >
                     Description
-                  </div>
-                  <div class="flex flex-row items-start justify-start py-[0rem] px-[0.5rem]">
-                    <div class="relative text-[0.88rem] leading-[1.25rem] font-poppins text-bodytext-50 text-left z-[1]">
-                      Description
-                    </div>
-                  </div>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    class="bg-gray-50 border  h-[3.13rem] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-coral-100 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                    placeholder="Description"
+                    required
+                  />
                 </div>
               </div>
+
               <div class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[3rem] max-w-full mq450:gap-[3rem]">
-                <div class="flex-1 flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[1.38rem] min-w-[15.88rem] max-w-full z-[3]">
-                  <input
-                    class="[outline:none] bg-[transparent] w-full h-[3.13rem] absolute my-0 mx-[!important] right-[0rem] bottom-[0.19rem] left-[0rem] rounded-lg box-border border-[1px] border-solid border-darkslategray-300"
-                    type="text"
-                  />
-
-                  <div class="relative text-[0.88rem] leading-[1.13rem] uppercase font-semibold font-poppins text-bodytext-50 text-left">
+                <div class="flex-1 flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[0.5rem] min-w-[15.88rem] max-w-full z-[3]">
+                  <label
+                    for="first_name"
+                    class="block ml-2 text-sm uppercase font-medium text-bodytext-50 dark:text-white"
+                  >
                     Source
-                  </div>
-                  <div class="flex flex-row items-start justify-start py-[0rem] px-[0.5rem]">
-                    <div class="relative text-[0.88rem] leading-[1.25rem] font-poppins text-bodytext-50 text-left z-[1]">
-                      Source
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-1 flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[1.38rem] min-w-[15.88rem] max-w-full z-[3]">
+                  </label>
                   <input
-                    class="[outline:none] bg-[transparent] w-full h-[3.13rem] absolute my-0 mx-[!important] right-[0rem] bottom-[0.19rem] left-[0rem] rounded-lg box-border border-[1px] border-solid border-darkslategray-300"
                     type="text"
+                    id="name"
+                    class="bg-gray-50 border  h-[3.13rem] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-coral-100 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                    placeholder="Source"
+                    required
                   />
-
-                  <div class="relative text-[0.88rem] leading-[1.13rem] uppercase font-semibold font-poppins text-bodytext-50 text-left">
+                </div>{" "}
+                <div class="flex-1 flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[0.5rem] min-w-[15.88rem] max-w-full z-[3]">
+                  <label
+                    for="Repository"
+                    class="block ml-2 text-sm uppercase font-medium text-bodytext-50 dark:text-white"
+                  >
                     Repository
-                  </div>
-                  <div class="flex flex-row items-start justify-start py-[0rem] px-[0.5rem]">
-                    <div class="relative text-[0.88rem] leading-[1.25rem] font-poppins text-bodytext-50 text-left z-[1]">
-                      Repository
-                    </div>
-                  </div>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    class="bg-gray-50 border  h-[3.13rem] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-coral-100 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                    placeholder="Repository"
+                    required
+                  />
                 </div>
               </div>
-              <div class="self-stretch flex flex-row items-start justify-start gap-[2.69rem] max-w-full mq450:gap-[2.69rem] mq750:flex-wrap">
-                <div class="flex-1 flex flex-col items-center justify-center relative min-w-[15.88rem] max-w-full mq750:flex-1">
-                  <div class="self-stretch flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] relative gap-[1.38rem] z-[3]">
-                    <input
-                      class="[outline:none] bg-[transparent] w-full h-[3.13rem] absolute my-0 mx-[!important] right-[0rem] bottom-[0.19rem] left-[0rem] rounded-lg box-border border-[1px] border-solid border-darkslategray-300"
-                      type="text"
-                    />
 
-                    <div class="relative text-[0.88rem] leading-[1.13rem] uppercase font-semibold font-poppins text-bodytext-50 text-left">
-                      Providers
-                    </div>
-                    <div class="flex flex-row items-start justify-start py-[0rem] px-[0.5rem]">
-                      <div class="relative text-[0.88rem] leading-[1.25rem] font-poppins text-bodytext-50 text-left z-[1]">
-                        Providers
-                      </div>
-                    </div>
-                  </div>
-                  <img
-                    class="w-[0.69rem] h-[0.44rem] absolute my-0 mx-[!important] right-[1.63rem] bottom-[1.5rem] z-[4]"
-                    alt=""
-                    src="/public/vector-12.svg"
-                  />
-                </div>
-                <div class="flex-[0.9591] flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[1.38rem] min-w-[15.88rem] max-w-full z-[3] mq750:flex-1">
+              <div class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[3rem] max-w-full mq450:gap-[3rem]">
+                <div class="flex-1 flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[0.5rem] min-w-[15.88rem] max-w-full z-[3]">
+                  <label
+                    for="Providers"
+                    class="block ml-2 text-sm uppercase font-medium text-bodytext-50 dark:text-white"
+                  >
+                    Providers
+                  </label>
                   <input
-                    class="[outline:none] bg-[transparent] w-full h-[3.13rem] absolute my-0 mx-[!important] right-[0rem] bottom-[0.19rem] left-[0rem] rounded-lg box-border border-[1px] border-solid border-darkslategray-300"
                     type="text"
+                    id="Providers"
+                    class="bg-gray-50 border  h-[3.13rem] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-coral-100 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                    placeholder="Providers"
+                    required
                   />
-
-                  <div class="relative text-[0.88rem] leading-[1.13rem] uppercase font-semibold font-poppins text-bodytext-50 text-left">
+                </div>{" "}
+                <div class="flex-1 flex flex-col items-start justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[0.5rem] min-w-[15.88rem] max-w-full z-[3]">
+                  <label
+                    for="IDE"
+                    class="block ml-2 text-sm font-medium text-bodytext-50 dark:text-white"
+                  >
                     IDE
-                  </div>
-                  <div class="flex flex-row items-start justify-start py-[0rem] px-[0.5rem]">
-                    <div class="relative text-[0.88rem] leading-[1.25rem] font-poppins text-bodytext-50 text-left z-[1]">
-                      IDE
-                    </div>
-                  </div>
+                  </label>
+                  <input
+                    type="text"
+                    id="IDE"
+                    class="bg-gray-50 border  h-[3.13rem] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-coral-100 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                    placeholder="IDE"
+                    required
+                  />
                 </div>
               </div>
             </div>

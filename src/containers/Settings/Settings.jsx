@@ -4,9 +4,11 @@ import Form from "react-bootstrap/Form";
 import "./Settings.css";
 import calendar from "../../assets/Icon/calendar.svg";
 import orgcalendar from "../../assets/Icon/orgcalendar.svg";
+import EditButton from "../../assets/Icon/EditButton.svg";
 import DeleteIcon from "../../assets/Icon/group-239349.svg";
 import arrowdown from "../../assets/Icon/arrowdown.svg";
 import setting from "../../assets/Icon/setting.svg";
+import Deleteiconn from "../../assets/Icon/Deleteiconn.svg";
 
 import clipboard from "../../assets/Icon/clipboard-text.svg";
 import clock from "../../assets/Icon/clock.svg";
@@ -40,7 +42,15 @@ const Settings = () => {
         </div>
         <div class="rectangle-parent2">
           <div class="frame-child6"></div>
-          <div className="Vector306" style={{width: 0, height: 36, marginTop:"70px", border: '2px #FF8548 solid'}}></div>
+          <div
+            className="Vector306"
+            style={{
+              width: 0,
+              height: 36,
+              marginTop: "70px",
+              border: "2px #FF8548 solid",
+            }}
+          ></div>
           <div class="settings-panel">
             <img
               class="settings-panel-child"
@@ -74,84 +84,98 @@ const Settings = () => {
               </Link>
             </div>
           </div>
+
           <div class="avatar-frame1">
             <h3 class="team-members2">Team members</h3>
-            <div class="team-members-list">
-              <img
-                class="team-members-list-child"
-                loading="eager"
-                alt=""
-                src={file1}
-              />
-
-              <div class="john-fred-parent">
-                <div class="john-fred">John Fred</div>
-                <div class="johnfredgmailcom">johnfred@gmail.com</div>
-              </div>
-            </div>
-            <div class="team-members-list1">
-              <img
-                class="team-members-list-item"
-                loading="eager"
-                alt=""
-                src={file2}
-              />
-
-              <div class="john-fred-group">
-                <div class="john-fred1">John Fred</div>
-                <div class="johnfredgmailcom1">johnfred@gmail.com</div>
-              </div>
-            </div>
-            <div class="frame-parent1">
-              <div class="invite-members-button-parent">
-                <div class="invite-members-button">
+            <ul class="user-details-li">
+              <li class="user-detai flex mb-2 mr-5">
+                <div class="team-members-l"> 
+                  <Link  class="no-underline flex text-gray-900" to='teamMember'>
                   <img
-                    class="invite-members-button-child"
-                    loading="eager"
-                    alt=""
-                    src={file3}
-                  />
-
-                  <div class="john-fred-container">
-                    <div class="john-fred2">John Fred</div>
-                    <div class="johnfredgmailcom2">johnfred@gmail.com</div>
-                  </div>
-                </div>
-                <div class="invite-members-button1">
-                  <img
-                    class="invite-members-button-item"
-                    loading="eager"
-                    alt=""
-                    src={file1}
-                  />
-
-                  <div class="john-fred-parent1">
-                    <div class="john-fred3">John Fred</div>
-                    <div class="johnfredgmailcom3">johnfred@gmail.com</div>
-                  </div>
-                </div>
-                <div class="invite-members-button2">
-                  <img
-                    class="invite-members-button-inner"
+                    class="team-members-list-item mr-3"
                     loading="eager"
                     alt=""
                     src={file2}
-                  />
+                    />
 
-                  <div class="john-fred-parent2">
-                    <div class="john-fred4">John Fred</div>
-                    <div class="johnfredgmailcom4">johnfred@gmail.com</div>
+                  <div class="john-fred-group">
+                    <div class="john-fred1">John Fred</div>
+                    <div class="johnfredgmailcom1">johnfred@gmail.com</div>
                   </div>
+                    </Link>
                 </div>
-              </div>
-              <button class="invite-box-parent">
-                <div class="invite-box"></div>
-                <div class="invite-members">+Invite Members</div>
-                {/* <img class="vuesaxboldgallery-icon" alt="" /> */}
-              </button>
-            </div>
+                <button class="group-button mx-8">
+                  <div class="frame-child7"></div>
+                  <div class="project-manager">Project Manager</div>
+                </button>
+                <img
+                  class="delete-icon mx-8"
+                  loading="eager"
+                  alt=""
+                  src={Deleteiconn}
+                />
+                <div class="toggle-button mx-8 my-5">
+                  <Form>
+                    <Form.Check
+                      type="switch"
+                      id="custom-switch"
+                      className="custom-switch"
+                    />
+                  </Form>
+                </div>
+                <img
+                  class="edit-icon mx-8"
+                  loading="eager"
+                  alt=""
+                  src={EditButton}
+                />
+              </li>
+              <li class="user-detai flex mb-2 mr-5">
+                <div class="team-members-l"> 
+                  <Link  class="no-underline flex text-gray-900" to='teamMember'>
+                  <img
+                    class="team-members-list-item mr-3"
+                    loading="eager"
+                    alt=""
+                    src={file2}
+                    />
+
+                  <div class="john-fred-group">
+                    <div class="john-fred1">John Fred</div>
+                    <div class="johnfredgmailcom1">johnfred@gmail.com</div>
+                  </div>
+                    </Link>
+                </div>
+                <button class="group-button mx-8">
+                  <div class="frame-child7"></div>
+                  <div class="project-manager">Project Manager</div>
+                </button>
+                <img
+                  class="delete-icon mx-8"
+                  loading="eager"
+                  alt=""
+                  src={Deleteiconn}
+                />
+                <div class="toggle-button mx-8">
+                  <Form>
+                    <Form.Check
+                      type="switch"
+                      id="custom-switch"
+                      className="custom-switch"
+                    />
+                  </Form>
+                </div>
+                <img
+                  class="edit-icon mx-8"
+                  loading="eager"
+                  alt=""
+                  src={EditButton}
+                />
+              </li>
+            </ul>
+         
           </div>
-          <div class="project-manager-group">
+          {/* <div class="project-manager-group">
             <div class="i-o-s-toggle-knob">
               <button class="group-button">
                 <div class="frame-child7"></div>
@@ -174,25 +198,17 @@ const Settings = () => {
                 <div class="copy-writer">Copy Writer</div>
               </button>
             </div>
-          </div>
+          </div> */}
 
-          <img
+          {/* <img
             class="frame-child12"
             // style={{width: 37, height: 37, opacity: 0.10, background: '#645D5D', borderRadius: 9999}}
             loading="eager"
             alt=""
             src={Ellips}
-          />
-          <div class="frame-wrapper">
-            <img
-              class="frame-child13"
-              // style={{width: 18, height: 20, background: '#FF8548'}}
-              loading="eager"
-              alt=""
-              src={DeleteIcon}
-            />
-          </div>
-          <div class="frame-wrapper1">
+          /> */}
+
+          {/* <div class="frame-wrapper1">
             <div class="ios-toggle-parent">
               <Form>
                 <Form.Check // prettier-ignore
@@ -230,7 +246,7 @@ const Settings = () => {
                 />
               </Form>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

@@ -13,7 +13,7 @@ const Login = () => {
   };
   return (
     <div>
-      <div class="w-full relative px-[450px] pt-[50px] pb-[50px] bg-ghostwhite shadow-[0px_4px_74px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[5.75rem] box-border gap-[18.31rem] tracking-[normal] mq700:gap-[18.31rem] mq950:flex-wrap mq975:gap-[18.31rem]">
+      <div class="w-full relative px-[450px] pt-[50px] pb-[50px] h-[100vh] bg-ghostwhite shadow-[0px_4px_74px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[5.75rem] box-border gap-[18.31rem] tracking-[normal] mq700:gap-[18.31rem] mq950:flex-wrap mq975:gap-[18.31rem]">
         <form class="m-0 w-1/4 self-stretch flex-1 rounded-3xl bg-white flex flex-col items-center justify-start mt-10 pt-[1.75rem] pb-[2.13rem] pr-[2.94rem] pl-[3rem] box-border gap-[1.5rem] max-w-full z-[2] mq700:pl-[1.5rem] mq700:pr-[1.44rem] mq700:box-border mq950:pt-[1.25rem] mq950:pb-[1.38rem] mq950:box-border">
           <div class="self-stretch flex flex-col items-center justify-start gap-[0.31rem]">
             <img
@@ -56,12 +56,14 @@ const Login = () => {
           </div>
 
           <div class="self-stretch flex-1 flex flex-col items-start justify-start max-w-full">
-            <button class="cursor-pointer [border:none] p-[0.31rem] bg-orange self-stretch rounded-lg flex flex-row items-center justify-center box-border max-w-full whitespace-nowrap z-[3] hover:bg-chocolate">
+            {/* <button class="cursor-pointer [border:none] p-[0.31rem] bg-orange self-stretch rounded-lg flex flex-row items-center justify-center box-border max-w-full whitespace-nowrap z-[3] hover:bg-chocolate"> */}
+            <Link to="/" className='no-underline cursor-pointer [border:none] p-[0.31rem] bg-orange self-stretch rounded-lg flex flex-row items-center justify-center box-border max-w-full whitespace-nowrap z-[3] hover:bg-chocolate'>
               <div class="h-[3.13rem] w-[24.44rem] relative rounded-lg bg-coral hidden max-w-full"></div>
               <div class="relative text-[1.25rem] leading-[2.5rem]  capitalize font-semibold font-poppins text-white text-left z-[4]">
                 Sign In
               </div>
-            </button>
+            </Link>
+            {/* </button> */}
             <div class="self-stretch flex-1 flex flex-col items-start justify-start max-w-full">
               <div class="self-stretch flex flex-row items-end justify-center pt-[1.81rem] px-[0rem] pb-[0.19rem] box-border max-w-full z-[4]">
                 <button class="cursor-pointer py-[0.88rem] pr-[1.25rem] pl-[2rem] bg-[transparent] flex-1 rounded-lg box-border flex flex-row items-center justify-center gap-[0.63rem] max-w-full whitespace-nowrap border-[1px] border-solid border-darkslategray-200 hover:bg-dimgray-400 hover:box-border hover:border-[1px] hover:border-solid hover:border-dimgray-300">
@@ -73,7 +75,7 @@ const Login = () => {
                   />
 
                   <div class="relative text-[0.94rem] leading-[1.25rem] font-medium font-poppins text-dimgray-200 text-left z-[5]">
-                    Sing In with Google
+                    Sign In with Google
                   </div>
                 </button>
               </div>
@@ -87,7 +89,7 @@ const Login = () => {
                   />
 
                   <div class="relative text-[0.94rem] leading-[1.25rem] font-medium font-poppins text-dimgray-200 text-left z-[5]">
-                    Sing In with Twitter
+                    Sign In with Twitter
                   </div>
                 </button>
               </div>
@@ -98,7 +100,7 @@ const Login = () => {
               Already have an Account?
             </div>
             <Link to='/signUp' class="relative text-[0.94rem] leading-[1.25rem] font-medium font-poppins text-coral text-left z-[3]">
-              SingUp
+              SignUp
             </Link>
           </div>
         </form>

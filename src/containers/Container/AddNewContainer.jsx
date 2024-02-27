@@ -12,7 +12,7 @@ const AddNewContainer = () => {
       <div class="self-stretch flex flex-row items-center justify-between gap-[4.25rem] max-w-full mq1050:flex-wrap">
             <div class="flex flex-row items-center justify-start gap-[0.31rem] max-w-full mq450:flex-wrap">
               <h2 class="m-0 h-[2.25rem] relative text-inherit tracking-[0.02em] font-semibold font-inherit flex items-center mq450:text-[1.19rem]">
-                List Container
+                Container
               </h2>
               <img
                 class="h-[0.69rem] w-[0.44rem] relative object-contain"
@@ -21,7 +21,7 @@ const AddNewContainer = () => {
               />
 
               <div class="relative text-[1rem] tracking-[0.02em] capitalize">
-                Add New Container form
+                Add New Container
               </div>
             </div>
             <div class="flex flex-row items-start justify-end gap-[1.38rem] max-w-full text-right text-[0.75rem] mq450:flex-wrap">
@@ -228,7 +228,7 @@ const AddNewContainer = () => {
                     <button class="cursor-pointer [border:none] p-[0.94rem] bg-coral-100 self-stretch rounded-lg flex flex-row items-center justify-center box-border max-w-full whitespace-nowrap z-[2] hover:bg-chocolate-100">
                       <div class="h-[3.13rem] w-[24.44rem] relative rounded-lg bg-coral-100 hidden max-w-full"></div>
                       <b class="relative text-[0.88rem] leading-[1.25rem] capitalize font-poppins text-white text-left z-[1]">
-                        add new workspace
+                        add new Container
                       </b>
                     </button>
                   </div>
