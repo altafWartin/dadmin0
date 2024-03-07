@@ -6,7 +6,8 @@ import element from "../../assets/Icon/element.svg";
 import Contianer from "../../assets/Icon/Container.svg";
 import setting from "../../assets/Icon/setting.svg";
 import calander from "../../assets/Icon/calendar.svg";
-import workflow from "../../assets/Icon/workflow.svg";
+import workflow from "../../assets/Icon/WorkF.svg";
+import Projecticon from "../../assets/Icon/workflow.svg";
 
 const Sidebar = () => {
   const location = useLocation();
@@ -55,8 +56,26 @@ const Sidebar = () => {
                     isLinkActive("/projects") && styles.active
                   }`}
                 >
-                  <img className={styles.vuesaxboldelement3Icon} alt="" src={element} />
+                  <img className={styles.vuesaxboldelement3Icon} alt="" src={Projecticon} />
                   <div className={styles.workspace}>Projects</div>
+                </div>
+              </Link>
+              <Link
+                to="/container"
+                className={styles.linkText}
+                onClick={() => handleLinkClick("/container")}
+              >
+                <div
+                  className={`${styles.iconcalendarParent} ${
+                    isLinkActive("/container") && styles.active
+                  }`}
+                >
+                  <img
+                    className={styles.vuesaxboldelement3Icon}
+                    alt=""
+                    src={Contianer}
+                  />
+                  <div className={styles.workspace}>Resources</div>
                 </div>
               </Link>
               <Link
@@ -95,24 +114,7 @@ const Sidebar = () => {
                   <div className={styles.workspace}>Workflows</div>
                 </div>
               </Link>
-              <Link
-                to="/container"
-                className={styles.linkText}
-                onClick={() => handleLinkClick("/container")}
-              >
-                <div
-                  className={`${styles.iconcalendarParent} ${
-                    isLinkActive("/container") && styles.active
-                  }`}
-                >
-                  <img
-                    className={styles.vuesaxboldelement3Icon}
-                    alt=""
-                    src={Contianer}
-                  />
-                  <div className={styles.workspace}>Container</div>
-                </div>
-              </Link>
+            
               <Link
                 to="/settings"
                 className={styles.linkText}

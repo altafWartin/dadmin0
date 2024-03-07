@@ -23,14 +23,14 @@ const SignUp = () => {
             <div class="self-stretch flex flex-col items-start justify-start pt-[0.25rem] px-[0rem] pb-[0.19rem] relative gap-[0.44rem] z-[3]">
               <div class="flex flex-row items-start justify-start py-[0rem] px-[0.5rem]">
                 <div class="relative text-[0.88rem] leading-[1.13rem] uppercase font-semibold font-poppins text-dimgray-200 text-left">
-                  First Name
+Name
                 </div>
               </div>
 
               <input
                 class="[outline:none] bg-[transparent] px-3 self-stretch h-[3.13rem] relative rounded-lg box-border min-w-[14.69rem] border-[1px] border-solid border-darkslategray-200"
                 type="text"
-                placeholder="First Name"
+                placeholder="Name"
               />
             </div>
             <div class="self-stretch flex flex-col items-start justify-start pt-[0.25rem] px-[0rem] pb-[0.19rem] relative gap-[0.44rem] z-[3]">

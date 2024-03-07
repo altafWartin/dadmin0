@@ -2,7 +2,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Dashboard from "./containers/Dashboard/Dashboard.jsx";
 import Workspace from "./containers/Workspace/Workspace.jsx";
-import Container from "./containers/Container/Container.jsx";
+import Container from "./containers/Container/Resources.jsx";
 import Settings from "./containers/Settings/Settings.jsx";
 import Workflows from "./containers/Workflows/Workflows.jsx";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
@@ -46,7 +46,7 @@ function App() {
           <Route path="/workspace" element={<Workspace />} />
           <Route path="/editWorkspace" element={<EditWorkspace />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/addProject" element={<AddProject />} />
+          <Route path="/addNewProject" element={<AddProject />} />
           <Route path="/editProject" element={<EditProject />} />
           <Route path="/addNewWorkspace" element={<AddNewWorkspace />} />
           <Route path="/workflow" element={<Workflows />} />
@@ -59,8 +59,8 @@ function App() {
           <Route path="/editImage" element={<EditImage />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/addMember" element={<AddMember />} />
-          <Route path="/editMemberInfo" element={<EditMemberInfo />} />
-          <Route path="/teamMember" element={<TeamMember />} />
+          <Route path="/settings/editMemberInfo" element={<EditMemberInfo />} />
+          <Route path="/settings/teamMember" element={<TeamMember />} />
           <Route path="/changePassword" element={<ChangePassword />} />
         </Routes>
         {!isLoginPage && !issignUpPage && <Footer />}

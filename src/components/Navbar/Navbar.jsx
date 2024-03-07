@@ -45,7 +45,7 @@ const Navbar = () => {
               src={Notification}
             />
 
-            <img
+            {/* <img
               class="h-[2.5rem] w-[2.5rem] relative object-contain min-h-[2.5rem]"
               loading="eager"
               alt=""
@@ -56,7 +56,7 @@ const Navbar = () => {
               loading="eager"
               alt=""
               src={Message}
-            />
+            /> */}
           </div>
           <div class="flex flex-row items-center justify-start py-[0rem] pr-[0.06rem] pl-[0rem] gap-[0.94rem]">
             <div class="flex flex-col items-end justify-start py-[0rem] pr-[0rem] pl-[0.25rem]">

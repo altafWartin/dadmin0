@@ -89,91 +89,246 @@ const Settings = () => {
             <h3 class="team-members2">Team members</h3>
             <ul class="user-details-li">
               <li class="user-detai flex mb-2 mr-5">
-                <div class="team-members-l"> 
-                  <Link  class="no-underline flex text-gray-900" to='teamMember'>
-                  <img
-                    class="team-members-list-item mr-3"
-                    loading="eager"
-                    alt=""
-                    src={file2}
+                <div class="team-members-l">
+                   
+                  <Link class="no-underline flex text-gray-900" to="teamMember">
+                    <img
+                      class="team-members-list-item mr-3"
+                      loading="eager"
+                      alt=""
+                      src={file2}
                     />
 
-                  <div class="john-fred-group">
-                    <div class="john-fred1">John Fred</div>
-                    <div class="johnfredgmailcom1">johnfred@gmail.com</div>
-                  </div>
-                    </Link>
+                    <div class="john-fred-group">
+                      <div class="john-fred1">John Fred</div>
+                      <div class="johnfredgmailcom1">johnfred@gmail.com</div>
+                    </div>
+                  </Link>
                 </div>
                 <button class="group-button mx-8">
                   <div class="frame-child7"></div>
                   <div class="project-manager">Project Manager</div>
                 </button>
-                <img
-                  class="delete-icon mx-8"
-                  loading="eager"
-                  alt=""
-                  src={Deleteiconn}
-                />
-                <div class="toggle-button mx-8 my-5">
-                  <Form>
+                <button className=" h-[60px] w-[]60px] mx-3 mt-2 bg-white d-flex justify-content-center align-items-center">
+                  <img
+                    class="delete-icon justify-content-center align-items-center"
+                    loading="eager"
+                    alt=""
+                    src={Deleteiconn}
+                  />
+                </button>
+                <div class="toggle-button mx-8 d-flex justify-content-center align-items-center">
+                  <Form className="content-center">
                     <Form.Check
                       type="switch"
                       id="custom-switch"
-                      className="custom-switch"
+                      className="custom-switch content-center"
                     />
                   </Form>
                 </div>
-                <img
-                  class="edit-icon mx-8"
-                  loading="eager"
-                  alt=""
-                  src={EditButton}
-                />
+
+                <Link to="editMemberInfo" className=" h-[60px] w-[]60px] mx-3 mt-2 bg-white d-flex justify-content-center align-items-center">
+                  <img
+                    class="delete-icon justify-content-center align-items-center"
+                    loading="eager"
+                    alt=""
+                    src={EditButton}
+                  />
+                </Link>
               </li>
               <li class="user-detai flex mb-2 mr-5">
-                <div class="team-members-l"> 
-                  <Link  class="no-underline flex text-gray-900" to='teamMember'>
-                  <img
-                    class="team-members-list-item mr-3"
-                    loading="eager"
-                    alt=""
-                    src={file2}
+                <div class="team-members-l">
+                   
+                  <Link class="no-underline flex text-gray-900" to="teamMember">
+                    <img
+                      class="team-members-list-item mr-3"
+                      loading="eager"
+                      alt=""
+                      src={file1}
                     />
 
-                  <div class="john-fred-group">
-                    <div class="john-fred1">John Fred</div>
-                    <div class="johnfredgmailcom1">johnfred@gmail.com</div>
-                  </div>
-                    </Link>
+                    <div class="john-fred-group">
+                      <div class="john-fred1">John Fred</div>
+                      <div class="johnfredgmailcom1">johnfred@gmail.com</div>
+                    </div>
+                  </Link>
                 </div>
                 <button class="group-button mx-8">
                   <div class="frame-child7"></div>
                   <div class="project-manager">Project Manager</div>
                 </button>
-                <img
-                  class="delete-icon mx-8"
-                  loading="eager"
-                  alt=""
-                  src={Deleteiconn}
-                />
-                <div class="toggle-button mx-8">
-                  <Form>
+                <button className=" h-[60px] w-[]60px] mx-3 mt-2 bg-white d-flex justify-content-center align-items-center">
+                  <img
+                    class="delete-icon justify-content-center align-items-center"
+                    loading="eager"
+                    alt=""
+                    src={Deleteiconn}
+                  />
+                </button>
+                <div class="toggle-button mx-8 d-flex justify-content-center align-items-center">
+                  <Form className="content-center">
                     <Form.Check
                       type="switch"
                       id="custom-switch"
-                      className="custom-switch"
+                      className="custom-switch content-center"
                     />
                   </Form>
                 </div>
-                <img
-                  class="edit-icon mx-8"
-                  loading="eager"
-                  alt=""
-                  src={EditButton}
-                />
+
+                <Link to="editMemberInfo" className=" h-[60px] w-[]60px] mx-3 mt-2 bg-white d-flex justify-content-center align-items-center">
+                  <img
+                    class="delete-icon justify-content-center align-items-center"
+                    loading="eager"
+                    alt=""
+                    src={EditButton}
+                  />
+                </Link>
+              </li>
+              <li class="user-detai flex mb-2 mr-5">
+                <div class="team-members-l">
+                   
+                  <Link  class="no-underline flex text-gray-900" to="teamMember">
+                    <img
+                      class="team-members-list-item mr-3"
+                      loading="eager"
+                      alt=""
+                      src={file3}
+                    />
+
+                    <div class="john-fred-group">
+                      <div class="john-fred1">John Fred</div>
+                      <div class="johnfredgmailcom1">johnfred@gmail.com</div>
+                    </div>
+                  </Link>
+                </div>
+                <button class="group-button mx-8">
+                  <div class="frame-child7"></div>
+                  <div class="project-manager">Project Manager</div>
+                </button>
+                <button className=" h-[60px] w-[]60px] mx-3 mt-2 bg-white d-flex justify-content-center align-items-center">
+                  <img
+                    class="delete-icon justify-content-center align-items-center"
+                    loading="eager"
+                    alt=""
+                    src={Deleteiconn}
+                  />
+                </button>
+                <div class="toggle-button mx-8 d-flex justify-content-center align-items-center">
+                  <Form className="content-center">
+                    <Form.Check
+                      type="switch"
+                      id="custom-switch"
+                      className="custom-switch content-center"
+                    />
+                  </Form>
+                </div>
+
+                <Link to="editMemberInfo" className=" h-[60px] w-[]60px] mx-3 mt-2 bg-white d-flex justify-content-center align-items-center">
+                  <img
+                    class="delete-icon justify-content-center align-items-center"
+                    loading="eager"
+                    alt=""
+                    src={EditButton}
+                  />
+                </Link>
+              </li>
+              <li class="user-detai flex mb-2 mr-5">
+                <div class="team-members-l">
+                   
+                  <Link class="no-underline flex text-gray-900" to="teamMember">
+                    <img
+                      class="team-members-list-item mr-3"
+                      loading="eager"
+                      alt=""
+                      src={file1}
+                    />
+
+                    <div class="john-fred-group">
+                      <div class="john-fred1">John Fred</div>
+                      <div class="johnfredgmailcom1">johnfred@gmail.com</div>
+                    </div>
+                  </Link>
+                </div>
+                <button class="group-button mx-8">
+                  <div class="frame-child7"></div>
+                  <div class="project-manager">Project Manager</div>
+                </button>
+                <button className=" h-[60px] w-[]60px] mx-3 mt-2 bg-white d-flex justify-content-center align-items-center">
+                  <img
+                    class="delete-icon justify-content-center align-items-center"
+                    loading="eager"
+                    alt=""
+                    src={Deleteiconn}
+                  />
+                </button>
+                <div class="toggle-button mx-8 d-flex justify-content-center align-items-center">
+                  <Form className="content-center">
+                    <Form.Check
+                      type="switch"
+                      id="custom-switch"
+                      className="custom-switch content-center"
+                    />
+                  </Form>
+                </div>
+
+                <Link to="editMemberInfo" className=" h-[60px] w-[]60px] mx-3 mt-2 bg-white d-flex justify-content-center align-items-center">
+                  <img
+                    class="delete-icon justify-content-center align-items-center"
+                    loading="eager"
+                    alt=""
+                    src={EditButton}
+                  />
+                </Link>
+              </li>
+              <li class="user-detai flex mb-2 mr-5">
+                <div class="team-members-l">
+                   
+                  <Link class="no-underline flex text-gray-900" to="teamMember">
+                    <img
+                      class="team-members-list-item mr-3"
+                      loading="eager"
+                      alt=""
+                      src={file2}
+                    />
+
+                    <div class="john-fred-group">
+                      <div class="john-fred1">John Fred</div>
+                      <div class="johnfredgmailcom1">johnfred@gmail.com</div>
+                    </div>
+                  </Link>
+                </div>
+                <button class="group-button mx-8">
+                  <div class="frame-child7"></div>
+                  <div class="project-manager">Project Manager</div>
+                </button>
+                <button className=" h-[60px] w-[]60px] mx-3 mt-2 bg-white d-flex justify-content-center align-items-center">
+                  <img
+                    class="delete-icon justify-content-center align-items-center"
+                    loading="eager"
+                    alt=""
+                    src={Deleteiconn}
+                  />
+                </button>
+                <div class="toggle-button mx-8 d-flex justify-content-center align-items-center">
+                  <Form className="content-center">
+                    <Form.Check
+                      type="switch"
+                      id="custom-switch"
+                      className="custom-switch content-center"
+                    />
+                  </Form>
+                </div>
+
+                <Link to="editMemberInfo" className=" h-[60px] w-[]60px] mx-3 mt-2 bg-white d-flex justify-content-center align-items-center">
+                  <img
+                    class="delete-icon justify-content-center align-items-center"
+                    loading="eager"
+                    alt=""
+                    src={EditButton}
+                  />
+                </Link>
               </li>
             </ul>
-         
           </div>
           {/* <div class="project-manager-group">
             <div class="i-o-s-toggle-knob">
@@ -200,53 +355,6 @@ const Settings = () => {
             </div>
           </div> */}
 
-          {/* <img
-            class="frame-child12"
-            // style={{width: 37, height: 37, opacity: 0.10, background: '#645D5D', borderRadius: 9999}}
-            loading="eager"
-            alt=""
-            src={Ellips}
-          /> */}
-
-          {/* <div class="frame-wrapper1">
-            <div class="ios-toggle-parent">
-              <Form>
-                <Form.Check // prettier-ignore
-                  type="switch"
-                  id="custom-switch"
-                  className="custom-switch"
-                />
-              </Form>
-              <Form>
-                <Form.Check // prettier-ignore
-                  type="switch"
-                  id="custom-switch"
-                  className="custom-switch"
-                />
-              </Form>
-              <Form>
-                <Form.Check // prettier-ignore
-                  type="switch"
-                  id="custom-switch"
-                  className="custom-switch"
-                />
-              </Form>
-              <Form>
-                <Form.Check // prettier-ignore
-                  type="switch"
-                  id="custom-switch"
-                  className="custom-switch"
-                />
-              </Form>
-              <Form>
-                <Form.Check // prettier-ignore
-                  type="switch"
-                  id="custom-switch"
-                  className="custom-switch"
-                />
-              </Form>
-            </div>
-          </div> */}
         </div>
       </section>
     </div>

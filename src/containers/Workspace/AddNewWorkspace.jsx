@@ -1,19 +1,104 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import calendar from "../../assets/Icon/calendar.svg";
 import arrowdown from "../../assets/Icon/arrowdown.svg";
 import setting from "../../assets/Icon/setting.svg";
+import close from "../../assets/Icon/close.png";
+
 import ArrowRight from "../../assets/Icon/ArrowRight.svg";
 import logo from "../../assets/logo.svg";
 
 const AddNewWorkspace = () => {
+  const [paramCount, setParamCount] = useState(0);
+  const [isPopupOpen, setPopupOpen] = useState(false);
+  const [labelName, setLabelName] = useState("");
+  const [labelNames, setLabelNames] = useState([]);
+
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
+  };
+
+  const handleLabelChange = (event) => {
+    setLabelName(event.target.value);
+  };
+
+  const submitLabel = () => {
+    setLabelNames((prevLabelNames) => [...prevLabelNames, labelName]);
+    setParamCount(paramCount + 1);
+    setLabelName("");
+    closePopup();
+  };
+
+  const handleDelete = (index) => {
+    // Create a copy of the labelNames array
+    const updatedLabelNames = [...labelNames];
+    // Remove the element at the specified index
+    updatedLabelNames.splice(index, 1);
+    // Update the state with the modified array
+    setLabelNames(updatedLabelNames);
+    // Update paramCount to reflect the changes
+    setParamCount(paramCount - 1);
+  };
+
+
+  useEffect(() => {
+    console.log(labelName, "labelName");
+    console.log(labelNames, "labelNames");
+  }, [labelName, labelNames]);
+
   return (
     <>
       <div className="containerBody">
+        {isPopupOpen && (
+          <div class="fixed top-1/2 left-1/2 transform bg-blend-difference -translate-x-1/2 -translate-y-1/2 z-[9999] w-full max-w-[25.88rem] p-8 bg-white rounded-3xl shadow-lg backdrop-blur-[8px]">
+            <button
+              class="absolute top-2 right-2 bg-white"
+              onClick={() => setPopupOpen(false)}
+            >
+              {/* Add your cut icon SVG here */}
+              <img src={close} class="h-6 w-6 text-gray-500" alt="" />
+            </button>
+            <div class="relative h-[21.31rem] text-[0.88rem] text-dimgray font-poppins">
+              <div class="w-full relative h-[21.31rem]  text-[0.88rem] text-dimgray font-poppins">
+                <div class="absolute w-full top-[9.19rem] right-[0rem] left-[0rem] h-[12.13rem]">
+                  <input
+                    placeholder="Enter label name"
+                    type="text"
+                    value={labelName}
+                    onChange={handleLabelChange}
+                    className="w-full mb-3 px-3 right-[0rem] left-[0rem] rounded-lg box-border h-[3.13rem] border-[1px] border-solid border-darkslategray-200"
+                  />
+                  <button
+                    onClick={submitLabel}
+                    className="mb-3 w-full top-[0rem] right-[0rem] left-[0rem] hover:bg-coral-100 rounded-lg box-border h-[3.13rem] border-[1px] border-solid border-darkslategray-200"
+                  >
+                    Submit
+                  </button>
+                </div>
+                <div class="absolute top-[calc(50%_-_139.5px)] left-[calc(50%_-_89.5px)] text-[1.25rem] leading-[2.5rem] capitalize font-medium text-darkslategray-100">
+                  Workspace Actions
+                </div>
+                <img
+                  class="absolute top-[0rem] left-[10.19rem] w-[2.15rem] h-[1.94rem]"
+                  alt=""
+                  src={logo}
+                />
+
+                <div class="absolute top-[4.44rem] justify-center left-[2.06rem] tracking-[-0.02em] whitespace-pre-wrap text-center inline-block w-[18.31rem]">
+                  Enter input lable name.
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
         <section
           // style={{ paddingLeft: "17rem", paddingTop: "8rem" }}
-          class=" w-full flex flex-col items-center justify-start py-[0rem] px-[1.25rem] box-border gap-[5rem] max-w-full text-left text-[1.5rem] text-bodytext-100 font-poppins lg:gap-[5rem] mq750:gap-[5rem]"
+          class=" w-full h-[130vh] flex flex-col items-center justify-start py-[0rem] px-[1.25rem] box-border gap-[5rem] max-w-full text-left text-[1.5rem] text-bodytext-100 font-poppins lg:gap-[5rem] mq750:gap-[5rem]"
         >
           <div class="self-stretch flex flex-row items-center justify-between gap-[4.25rem] max-w-full mq1050:flex-wrap">
             <div class="flex flex-row items-center justify-start gap-[0.31rem] max-w-full mq450:flex-wrap">
@@ -31,12 +116,7 @@ const AddNewWorkspace = () => {
               </div>
             </div>
             <div class="flex flex-row items-start justify-end gap-[1.38rem] max-w-full text-right text-[0.75rem] mq450:flex-wrap">
-              <button class="cursor-pointer [border:none] py-[0.38rem] pr-[1.38rem] pl-[1.81rem] bg-coral-100 rounded-3xs flex flex-row items-center justify-end whitespace-nowrap hover:bg-chocolate-100">
-                <div class="h-[2rem] w-[7.63rem] relative rounded-3xs bg-coral-100 hidden"></div>
-                <div class="relative text-[0.94rem] leading-[1.25rem] font-semibold font-poppins text-white text-left z-[1]">
-                  Add New
-                </div>
-              </button>
+
               <div class="flex flex-row items-start justify-start gap-[0.25rem]">
                 <div class="rounded-lg bg-white flex flex-row items-center justify-start py-[0.25rem] pr-[0.56rem] pl-[0.5rem] gap-[0.38rem]">
                   <img
@@ -195,7 +275,48 @@ const AddNewWorkspace = () => {
                   />
                 </div>
               </div>
+              <div class="self-stretch items-start justify-start  max-w-full mq450:gap-[3rem]">
+                {/* Existing Param1 and Param2 fields */}
+                {[...Array(paramCount)].map((_, index) => (
+                  <div
+                    key={index}
+                    className="flex-1 flex  flex-col w-full items-start  justify-start pt-[0.25rem] px-[0.5rem] pb-[1.13rem] box-border relative gap-[0.5rem] z-[3]"
+                  >
+                    <label
+                      htmlFor={labelNames[index]}
+                      className="block ml-2 text-sm uppercase font-medium text-bodytext-50 dark:text-white"
+                    >
+                      {labelNames[index]}
+                    </label>
+                    <div className="flex items-center w-full">
+                      <input
+                        type="text"
+                        // id={labelNames[index]} // You can set the id if needed
+                        className="bg-gray-50 border h-[3.13rem] capitalize border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-coral-100 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                        placeholder={labelNames[index]}
+                        required
+                      />
+                      <i
+                        className="bi bi-trash ml-2 cursor-pointer mx-4 text-red-500"
+                        onClick={() => handleDelete(index)}
+                      ></i>
+                    </div>
+                  </div>
+                ))}
+                <div className="w-full flex flex-row items-start justify-end py-[0rem] pr-[4.19rem] pl-[0rem] box-border max-w-full">
+                  <button
+                    type="button"
+                    // onClick={addParamField}
+                    onClick={openPopup}
+                    className=" flex justify-end bg-white cursor-pointer p-2 height-5 weight-5 rounded ̰"
+                    disabled={paramCount === 6}
+                  >
+                    <i className="bi bi-plus-square text-bodytext-50 fs-4"></i>
+                  </button>
+                </div>
+              </div>
             </div>
+
             <div class="w-[26.63rem] flex flex-row items-start justify-start py-[0rem] pr-[2.19rem] pl-[0rem] box-border max-w-full">
               <button class="cursor-pointer [border:none] p-[0.94rem] bg-coral-100 flex-1 rounded-lg flex flex-row items-center justify-center box-border max-w-full whitespace-nowrap z-[4] hover:bg-chocolate-100">
                 <div class="h-[3.13rem] w-[24.44rem] relative rounded-lg bg-coral-100 hidden max-w-full"></div>
